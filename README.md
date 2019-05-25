@@ -8,7 +8,7 @@ If you want, you can skip running test with running following command:\
 ``` sbt 'set test in assembly := {}' clean assembly```
 
 Create docker image:\
-```  docker build -t flink-batch-example:0.0.1 . ```
+```  docker build -t test-flink:0.0.1 . ```
 
 Run the docker container:\
 ``` docker run -v $(pwd)/data/input:/data/input -v $(pwd)/data/output:/data/output test-flink:0.0.1 ```
